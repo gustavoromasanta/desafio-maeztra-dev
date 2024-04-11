@@ -4,7 +4,7 @@ Whatsapp (21) 98222-3622 | E-mail contato@gustavoroma.com
 
 # Vercel
 
-Optei em fazer deploy no Vercel, pois já tenho prática. Se for uma questão eleminatória ter que fazer no GitHub Pages, solicito que me deem mais algumas horas para eu estudar sobre e fazer o deploy no mesmo.
+Optei em fazer deploy no Vercel, pois já tenho prática. Se for uma questão eliminatória ter que fazer no GitHub Pages, solicito que me deem mais algumas horas para eu estudar sobre e fazer o deploy no mesmo.
 
 [https://desafio-maeztra-dev-eta.vercel.app/](https://desafio-maeztra-dev-eta.vercel.app/)
 
