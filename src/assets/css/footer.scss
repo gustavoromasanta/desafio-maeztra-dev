@@ -1,0 +1,115 @@
+footer{
+    margin-top: 75px;
+
+    .top{
+        border-top: 2px solid #EFEFEF;
+        border-bottom: 2px solid #EFEFEF;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        .tpl-center{
+            max-width: 940px;
+            display: flex;
+            justify-content: space-between;
+
+            h2{
+                font-size: 24px;
+            }
+
+            form{
+                width: 100%;
+                max-width: 630px;
+                position: relative;
+
+                input{
+                    &[type="text"]{
+                        width: calc(100% - 27px);
+                        height: 38px;
+                        background-color: #fff;
+                        border: 1px solid #353535;
+                    }
+
+                    &[type="button"]{
+                        position: absolute;
+                        right: 0;
+                        border-radius: 8px;
+                        background-color: #FAA500;
+                        width: 119px;
+                        height: 40px;
+                        border: 0;
+                        font-size: 14px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .middle{
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        .tpl-center{
+            max-width: 940px;
+            display: flex;
+            justify-content: space-between;
+
+            h3{
+                color: #353535;
+                font-size: 16px;
+            }
+
+            ul.itens{
+                list-style: none;
+
+                li{
+                    margin-top: 20px;
+
+                    a{
+                        font-size: 12px;
+                        color: #000;
+                        text-decoration: none;
+
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom{
+        height: 85px;
+        background-color: #353535;
+
+        .tpl-center{
+            height: 85px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            ul.itens{
+                list-style: none;
+                display: flex;
+                align-items: center;
+
+                li{
+                    margin-right: 20px;
+
+                    a{
+                        display: block;
+
+                        img{
+                            display: block;
+                        }
+                    }
+
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

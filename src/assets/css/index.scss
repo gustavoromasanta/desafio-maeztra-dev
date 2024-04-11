@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800;900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('header.scss');
+@import url('fullbanner.scss');
+@import url('regua.scss');
+@import url('marcas.scss');
+@import url('prateleira.scss');
+@import url('seo.scss');
+@import url('footer.scss');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    background-color: #FAFAFA;
+
+    a{
+        cursor: pointer;
+    }
+
+    .tpl-center{
+        width: calc(100% - 40px);
+        max-width: 1600px;
+        margin: auto;
+    }
+
+    input[type="text"]{
+        height: 40px;
+        border-radius: 10px;
+        padding-left: 25px;
+        font-family: inherit;
+        font-size: 12px;
+        color: #353535;
+        -webkit-appearance: none;
+
+        &:focus{
+            outline: none;
+        }
+
+        &::-webkit-input-placeholder,
+        &::-moz-placeholder,
+        &:-ms-input-placeholder,
+        &:-moz-placeholder { 
+            font-family: inherit;
+            font-size: 12px;
+            color: #353535;
+        }
+    }
+
+    button,
+    input[type="button"]{
+        cursor: pointer;
+        -webkit-appearance: none;
+    }
+
+    .slick-dots{
+        bottom: 20px;
+
+        li button::before{
+            background-color: transparent;
+            border: 2px solid #FAA500;
+            opacity: 1;
+            font-size: 0;
+            width: 12px;
+            height: 12px;
+            content: '';
+            display: block;
+            border-radius: 50%;
+        }
+
+        li.slick-active button::before {
+            background-color: #FAA500;
+        }
+    }
+
+    .slick-prev, .slick-next{
+        width: 20px;
+        height: 32px;
+        opacity: 1;
+        z-index: 99999;
+    }
+
+    .slick-prev{
+        left: 40px!important;
+
+        &:before{
+            width: 20px;
+            height: 32px;
+            content: '';
+            display: block;
+            opacity: 1;
+            background-image: url('../../../public/_icon-prev.png');
+        }
+    }
+
+    .slick-next{
+        right: 40px!important;
+
+        &:before{
+            width: 20px;
+            height: 32px;
+            content: '';
+            display: block;
+            opacity: 1;
+            background-image: url('../../../public/_icon-next.png');
+        }
+    }
+}

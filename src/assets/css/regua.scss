@@ -1,0 +1,59 @@
+div.regua{
+    width: 100%;
+    margin-top: 25px;
+
+    .tpl-center{
+        h3{
+            font-size: 16px;
+            color: #353535;
+            text-align: center;
+        }
+
+        ul.itens{
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            margin-top: 25px;
+
+            li{
+                &.item{
+                    display: flex;
+                    align-items: center;
+                    background-color: #EFEFEF;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    border-radius: 4px;
+                    width: 100%;
+                    margin-left: 7.5px;
+                    margin-right: 7.5px;
+
+                    img{
+                        margin-left: 25px;
+                        margin-right: 25px;
+                    }
+
+                    &:first-child{
+                        margin-left: 0;
+                    }
+
+                    &:last-child{
+                        margin-right: 0;
+                    }
+
+                    .wrap{
+                        margin-right: 25px;
+                        
+                        strong,p{
+                            font-family: inherit;
+                            color: #353535;
+                        }
+                        
+                        p{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
