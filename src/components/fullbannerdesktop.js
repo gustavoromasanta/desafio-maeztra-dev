@@ -13,7 +13,7 @@ export default function SimpleSlider() {
   };
 
   return (
-    <Slider {...settings} className="fullbanner">
+    <Slider {...settings} className="fullbanner desktop">
         <a href={() => false}>
           <img src="fullbanner.png" alt="" />
         </a>

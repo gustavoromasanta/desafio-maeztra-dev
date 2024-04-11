@@ -30,6 +30,14 @@ div.marcas{
                     -o-transition: all 0.5s ease;
                     transition: all 0.5s ease;
 
+                    &:first-child{
+                        margin-left: 0;
+                    }
+
+                    &:last-child{
+                        margin-right: 0;
+                    }
+
                     a{
                         display: flex;
                         align-items: center;
@@ -41,6 +49,31 @@ div.marcas{
                     &:hover{
                         background-color: #fed32a;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    div.marcas{
+        .tpl-center{
+            width: 100%;
+
+            h2{
+                font-size: 24px;
+            }
+
+            ul.itens{
+                margin-left: 20px;
+                padding-bottom: 10px;
+                overflow-x: auto;
+                white-space: nowrap;
+                padding-right: 20px;
+
+                li.item{
+                    padding-left: 40px;
+                    padding-right: 40px;
                 }
             }
         }

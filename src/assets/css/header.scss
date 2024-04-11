@@ -79,6 +79,10 @@ header{
                         }
                     }
                 }
+
+                button.closeBusca{
+                    display: none;
+                }
             }
 
             .right{
@@ -102,6 +106,10 @@ header{
                             font-size: 14px;
                             color: #353535;
                         }
+                    }
+
+                    &.lupa{
+                        display: none;
                     }
 
                     &.minhaconta{
@@ -161,6 +169,10 @@ header{
         -moz-transition: all 0.5s ease;
         -o-transition: all 0.5s ease;
         transition: all 0.5s ease;
+
+        button.closeMenu{
+            display: none;
+        }
 
         .tpl-center{
             height: 48px;
@@ -270,6 +282,196 @@ header{
                                     font-weight: 700;
                                     color: #FAA500;
                                 }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    body.openMenuMobile{
+        overflow: hidden;
+
+        header .bottom{
+            left: 0;
+        }
+    }
+
+    body.openBusca{
+        header .middle .tpl-center .busca{
+            display: flex;
+        }
+    }
+
+    header{
+        min-height: 112px;
+        
+        .topBar{
+            p{
+                font-size: 10px;
+            }
+        }
+
+        .middle{
+            .tpl-center{
+                button.humburguer{
+                    width: 24px;
+                    height: 24px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    background-color: transparent;
+                    border: 0;
+                    padding: 0;
+                    
+                    span{
+                        width: 24px;
+                        height: 2px;
+                        background-color: #000;
+                        display: block;
+                    }
+                }
+    
+                .logo{
+                    margin-left: 20px;
+                    width: 110px;
+
+                    img{
+                        width: 100%;
+                        height: auto;
+                        display: block;
+                    }
+                }
+    
+                .busca{
+                    position: absolute;
+                    width: 100%;
+                    max-width: calc(100% - 40px);
+                    z-index: 999999;
+                    background-color: #fff;
+                    padding: 20px;
+                    left: 0;
+                    top: 60px;
+                    display: none;
+
+                    button.closeBusca{
+                        font-size: 22px;
+                        background-color: transparent;
+                        border: 0;
+                        padding: 0;
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        cursor: pointer;
+                        display: block;
+
+                        &:before {
+                            content: '✕';
+                            font-size: 24px;
+                            color: #231E1F;
+                            display: block;
+                        }
+                    }
+                }
+    
+                .right{
+                    width: calc(100% - 164px);
+                    justify-content: flex-end;
+
+                    .item{
+                        &.wishlist,
+                        &.minhaconta{
+                            display: none;
+                        }
+
+                        &.lupa{
+                            display: block;
+                            margin-right: 30px;
+                            cursor: pointer;
+
+                            img{
+                                position: relative;
+                                top: 2px;
+                            }
+                        }
+    
+                        &.carrinho{
+                            border: 0;
+                            width: max-content;
+
+                            a{
+                                img{
+                                    width: 24px;
+                                    margin-right: 0;
+                                }
+
+                                span{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottom{
+            position: fixed;
+            top: 0;
+            left: -100%;
+            z-index: 9999999999;
+            width: 100%;
+            height: 100%;
+            margin-top: 0 !important;
+
+            button.closeMenu{
+                position: absolute;
+                right: 0px;
+                top: 0;
+                font-size: 22px;
+                background-color: transparent;
+                border: 0;
+                padding: 0;
+                width: 70px;
+                height: 70px;
+                line-height: 70px;
+                cursor: pointer;
+
+                &:before {
+                    content: '✕';
+                    font-size: 24px;
+                    color: #231E1F;
+                    display: block;
+                }
+            }
+
+            .tpl-center{
+                height: auto;
+
+                ul.menu{
+                    flex-direction: column;
+                    margin-top: 60px;
+                    position: relative;
+
+                    height: calc(100% - 118px);
+                    overflow-y: scroll;
+                    -webkit-transform: translate3d(0, 0, 0);
+                    -webkit-overflow-scrolling: touch;
+
+
+                    li{
+                        &.itemDepartamento{
+                            height: auto;
+
+                            &>a{
+                                justify-content: flex-start;
+                            }
+
+                            .submenu{
+                                display: none!important;
                             }
                         }
                     }

@@ -36,3 +36,28 @@ div.seo{
         }
     }
 }
+
+@media screen and (max-width: 1024px) {
+    div.seo{
+        .tpl-center{
+            flex-direction: column;
+
+            .left,
+            .right{
+                width: 100%;
+
+                p{
+                    padding-right: 40px;
+                }
+            }
+
+            .left{
+                padding-right: 0;
+            }
+
+            .right{
+                margin-top: 25px;
+            }
+        }
+    }
+}

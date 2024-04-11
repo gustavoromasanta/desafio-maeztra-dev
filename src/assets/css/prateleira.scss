@@ -166,3 +166,26 @@ div.prateleira{
         }
     }
 }
+
+@media screen and (max-width: 1024px) {
+    div.prateleira{
+        .tpl-center{
+            width: 100%;
+
+            .slick-arrow{
+                display: none!important;
+            }
+
+            h2{
+                font-size: 24px;
+            }
+
+            ul.shelfs{
+                li.shelf{
+                    margin-left: 0;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}

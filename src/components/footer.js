@@ -1,9 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function Footer() {
+    const [isActive01, setIsActive01] = useState(false);
+    const [isActive02, setIsActive02] = useState(false);
+    const [isActive03, setIsActive03] = useState(false);
 
     useEffect(() => {
-        
     }, []);
 
     return (
@@ -22,7 +24,7 @@ export default function Footer() {
             <div className="middle">
                 <div className="tpl-center">
                     <div className="coluna coluna-1">
-                        <h3>Informações</h3>
+                        <h3 className={isActive01 ? 'ativo' : ''} onClick={() => setIsActive01(!isActive01)}>Informações</h3>
 
                         <ul className="itens">
                             <li className="item">
@@ -52,7 +54,7 @@ export default function Footer() {
                     </div>
 
                     <div className="coluna coluna-2">
-                        <h3>Minha Conta</h3>
+                        <h3 className={isActive02 ? 'ativo' : ''} onClick={() => setIsActive02(!isActive02)}>Minha Conta</h3>
 
                         <ul className="itens">
                             <li className="item">
@@ -76,7 +78,7 @@ export default function Footer() {
                     </div>
 
                     <div className="coluna coluna-3">
-                        <h3>Onde nos Encontrar</h3>
+                        <h3 className={isActive03 ? 'ativo' : ''} onClick={() => setIsActive03(!isActive03)}>Onde nos Encontrar</h3>
 
                         <ul className="itens">
                             <li className="item">

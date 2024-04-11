@@ -6,6 +6,22 @@ export default function Header() {
     const [sticky, setSticky] = useState("");
 
     useEffect(() => {
+        document.querySelector('.humburguer').addEventListener('click', () => {
+            document.querySelector('body').classList.add('openMenuMobile');
+        });
+
+        document.querySelector('.closeMenu').addEventListener('click', () => {
+            document.querySelector('body').classList.remove('openMenuMobile');
+        });
+
+        document.querySelector('.lupa').addEventListener('click', () => {
+            document.querySelector('body').classList.add('openBusca');
+        });
+
+        document.querySelector('.closeBusca').addEventListener('click', () => {
+            document.querySelector('body').classList.remove('openBusca');
+        });
+
         window.addEventListener("scroll", isSticky);
         return () => {
             window.removeEventListener("scroll", isSticky);
@@ -16,13 +32,13 @@ export default function Header() {
         const scrollTop = window.scrollY;
         const stickyClass = scrollTop >= 160 ? "is-sticky" : "";
         setSticky(stickyClass);
-        console.log(stickyClass);
+        //console.log(stickyClass);
     };
 
     const classes = `header ${sticky}`;
 
     return (
-       <header className={classes}>       
+       <header id="wrapHeader" className={classes}>       
             <div className="topBar">
                 <div className="tpl-center">
                     <p>Acompanhe as melhores promoções disponíveis aqui na Maeztra.</p>
@@ -31,8 +47,10 @@ export default function Header() {
 
             <div className="middle">
                 <div className="tpl-center">
-                    <button className="humburguer">
-                        <i className="icon bars"></i>
+                    <button id="humburguer" className="humburguer">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </button>
 
                     <h1 className="logo">
@@ -44,9 +62,15 @@ export default function Header() {
                             <input type="text" placeholder="O Que Você Busca?"/>
                             <input type="button" value="Buscar" />
                         </form>
+
+                        <button className="closeBusca"></button>
                     </div>
 
                     <div className="right">
+                        <div className="item lupa">
+                            <img alt="" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIzLjg1MzUgMjIuNDM5NUwxNi44ODE3IDE1LjQ2NzdDMTguMjA0IDEzLjgzNTEgMTkgMTEuNzU5NyAxOSA5LjUwMDA0QzE5IDQuMjYxNzUgMTQuNzM4MyAwIDkuNDk5OTkgMEM0LjI2MTcgMCAwIDQuMjYxNzUgMCA5LjUwMDA0QzAgMTQuNzM4MyA0LjI2MTc1IDE5LjAwMDEgOS41MDAwNCAxOS4wMDAxQzExLjc1OTcgMTkuMDAwMSAxMy44MzUxIDE4LjIwNCAxNS40Njc3IDE2Ljg4MTdMMjIuNDM5NSAyMy44NTM2QzIyLjYzNDggMjQuMDQ4OCAyMi45NTEzIDI0LjA0ODggMjMuMTQ2NyAyMy44NTM2TDIzLjg1MzYgMjMuMTQ2NkMyNC4wNDg4IDIyLjk1MTMgMjQuMDQ4OCAyMi42MzQ3IDIzLjg1MzUgMjIuNDM5NVpNOS41MDAwNCAxNy4wMDAxQzUuMzY0MyAxNy4wMDAxIDIuMDAwMDIgMTMuNjM1OCAyLjAwMDAyIDkuNTAwMDRDMi4wMDAwMiA1LjM2NDMgNS4zNjQzIDIuMDAwMDIgOS41MDAwNCAyLjAwMDAyQzEzLjYzNTggMi4wMDAwMiAxNy4wMDAxIDUuMzY0MyAxNy4wMDAxIDkuNTAwMDRDMTcuMDAwMSAxMy42MzU4IDEzLjYzNTggMTcuMDAwMSA5LjUwMDA0IDE3LjAwMDFaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4K" /> 
+                        </div>
+
                         <div className="item minhaconta">
                             <a href={() => false}>
                                 <img alt="" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNCAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTkuOCA5LjVDOC45MDMxMiA5LjUgOC40NzE4OCAxMCA3IDEwQzUuNTI4MTIgMTAgNS4xIDkuNSA0LjIgOS41QzEuODgxMjUgOS41IDAgMTEuMzgxMyAwIDEzLjdWMTQuNUMwIDE1LjMyODEgMC42NzE4NzUgMTYgMS41IDE2SDEyLjVDMTMuMzI4MSAxNiAxNCAxNS4zMjgxIDE0IDE0LjVWMTMuN0MxNCAxMS4zODEzIDEyLjExODcgOS41IDkuOCA5LjVaTTEyLjUgMTQuNUgxLjVWMTMuN0MxLjUgMTIuMjEyNSAyLjcxMjUgMTEgNC4yIDExQzQuNjU2MjUgMTEgNS4zOTY4NyAxMS41IDcgMTEuNUM4LjYxNTYzIDExLjUgOS4zNDA2MiAxMSA5LjggMTFDMTEuMjg3NSAxMSAxMi41IDEyLjIxMjUgMTIuNSAxMy43VjE0LjVaTTcgOUM5LjQ4NDM4IDkgMTEuNSA2Ljk4NDM4IDExLjUgNC41QzExLjUgMi4wMTU2MiA5LjQ4NDM4IDAgNyAwQzQuNTE1NjIgMCAyLjUgMi4wMTU2MiAyLjUgNC41QzIuNSA2Ljk4NDM4IDQuNTE1NjIgOSA3IDlaTTcgMS41QzguNjUzMTIgMS41IDEwIDIuODQ2ODcgMTAgNC41QzEwIDYuMTUzMTIgOC42NTMxMiA3LjUgNyA3LjVDNS4zNDY4OCA3LjUgNCA2LjE1MzEyIDQgNC41QzQgMi44NDY4NyA1LjM0Njg4IDEuNSA3IDEuNVoiIGZpbGw9IiMzNTM1MzUiLz4KPC9zdmc+Cg==" />
@@ -87,6 +111,8 @@ export default function Header() {
 
             <div className="bottom">
                 <div className="tpl-center">
+                    <button className="closeMenu"></button>
+
                     <ul className="menu">
                         <li className="itemDepartamento novidades">
                             <a href={() => false}>

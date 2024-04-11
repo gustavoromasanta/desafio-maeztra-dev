@@ -6,6 +6,7 @@
 @import url('prateleira.scss');
 @import url('seo.scss');
 @import url('footer.scss');
+@import url('lightbox.scss');
 
 *{
     padding: 0;
@@ -109,5 +110,11 @@ body{
             opacity: 1;
             background-image: url('../../../public/_icon-next.png');
         }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    body{
+        background-color: #fff;
     }
 }

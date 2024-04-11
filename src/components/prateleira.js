@@ -14,12 +14,26 @@ export default function Prateleira() {
         infinite: true,
         speed: 500,
         slidesToShow: 5,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrow: false,
+                className: "center",
+                centerMode: true,
+                infinite: true,
+                centerPadding: "40px",
+              }
+            }
+        ]
       };
 
     useEffect(() => {
         axios.get('https://dummyjson.com/products/search?q=shirt').then((res) => {
-            console.log('res >> ',res.data.products);
+            //console.log('res >> ',res.data.products);
             setProdutos(res.data.products);
         }).catch((err) => console.warn(err));
     }, []);

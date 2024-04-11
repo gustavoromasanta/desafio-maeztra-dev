@@ -1,3 +1,30 @@
+# Gustavo Roma
+
+Whatsapp (21) 98222-3622 | E-mail contato@gustavoroma.com
+
+# Vercel
+
+Optei em fazer deploy no Vercel, pois já tenho prática. Se for uma questão eleminatória ter que fazer no GitHub Pages, solicito que me deem mais algumas horas para eu estudar sobre e fazer o deploy no mesmo.
+
+[https://desafio-maeztra-dev-eta.vercel.app/](https://desafio-maeztra-dev-eta.vercel.app/)
+
+## Repositório
+
+Desenvolvi o layout utilizando reactjs, os componentes e assets estão devidamente separados e organizados em pastas. 
+Outra observação importante, a shelf (prateleira) eu estou consumindo com Axios da api dummyjson (os skus de cores são fake, de resto todas as informações são reais da api).
+
+[https://github.com/gustavoromasanta/desafio-maeztra-dev](https://github.com/gustavoromasanta/desafio-maeztra-dev)
+
+## Desafio
+
+Link do drive com os desafios.
+
+[https://drive.google.com/drive/folders/1iThEvLLan9OvUSk3_29IHr5H9N1tXR7C?usp=sharing](https://drive.google.com/drive/folders/1iThEvLLan9OvUSk3_29IHr5H9N1tXR7C?usp=sharing)
+
+## Node Version
+
+20.11.1
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
