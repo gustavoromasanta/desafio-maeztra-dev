@@ -8,20 +8,20 @@ Optei em fazer deploy no Vercel, pois já tenho prática. Se for uma questão el
 
 [https://desafio-maeztra-dev-eta.vercel.app/](https://desafio-maeztra-dev-eta.vercel.app/)
 
-## Repositório
+# Repositório
 
 Desenvolvi o layout utilizando reactjs, os componentes e assets estão devidamente separados e organizados em pastas. 
 Outra observação importante, a shelf (prateleira) eu estou consumindo com Axios da api dummyjson (os skus de cores são fake, de resto todas as informações são reais da api).
 
 [https://github.com/gustavoromasanta/desafio-maeztra-dev](https://github.com/gustavoromasanta/desafio-maeztra-dev)
 
-## Desafio
+# Desafio
 
 Link do drive com os desafios.
 
 [https://drive.google.com/drive/folders/1iThEvLLan9OvUSk3_29IHr5H9N1tXR7C?usp=sharing](https://drive.google.com/drive/folders/1iThEvLLan9OvUSk3_29IHr5H9N1tXR7C?usp=sharing)
 
-## Node Version
+# Node Version
 
 20.11.1
 
