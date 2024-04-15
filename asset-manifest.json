@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/desafio-maeztra-dev/static/css/main.97d44a1c.css",
+    "main.js": "/desafio-maeztra-dev/static/js/main.64e6142f.js",
+    "static/js/453.41268518.chunk.js": "/desafio-maeztra-dev/static/js/453.41268518.chunk.js",
+    "static/media/slick.svg": "/desafio-maeztra-dev/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/desafio-maeztra-dev/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/desafio-maeztra-dev/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/desafio-maeztra-dev/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/desafio-maeztra-dev/index.html",
+    "main.97d44a1c.css.map": "/desafio-maeztra-dev/static/css/main.97d44a1c.css.map",
+    "main.64e6142f.js.map": "/desafio-maeztra-dev/static/js/main.64e6142f.js.map",
+    "453.41268518.chunk.js.map": "/desafio-maeztra-dev/static/js/453.41268518.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.97d44a1c.css",
+    "static/js/main.64e6142f.js"
+  ]
+}
